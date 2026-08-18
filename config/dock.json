@@ -1,0 +1,21 @@
+{
+  "controls": [
+    {
+      "id": "git",
+      "title": "Git",
+      "command": "while true; do clear; git -c color.ui=always status -sb 2>/dev/null || echo 'not a git repo'; echo; git -c color.ui=always log --oneline -8 2>/dev/null; sleep 5; done",
+      "height": 300
+    },
+    {
+      "id": "ports",
+      "title": "Ports",
+      "command": "while true; do clear; lsof -iTCP -sTCP:LISTEN -P -n 2>/dev/null | awk 'NR==1 || /LISTEN/' | head -20; sleep 10; done",
+      "height": 220
+    },
+    {
+      "id": "system",
+      "title": "System",
+      "command": "command -v htop >/dev/null 2>&1 && exec htop || exec top -o cpu"
+    }
+  ]
+}

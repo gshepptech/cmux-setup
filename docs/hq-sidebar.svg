@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="560" viewBox="0 0 380 560" role="img" aria-label="Illustration of the hq sidebar: workspace rows with colour rails, project icons, git branch, pull request and port badges">
+  <defs>
+    <style>
+      .bg      { fill: #0E1319; }
+      .card    { fill: #131A22; }
+      .cardsel { fill: #1B2531; }
+      .title   { font: 600 15px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #C2CBD5; }
+      .titlesel{ font: 600 15px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #F5F1EA; }
+      .meta    { font: 500 12px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #93A0AE; }
+      .head    { font: 600 12px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #A7B2BF; letter-spacing: .06em; }
+      .dim     { font: 12px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #7A8695; }
+      .tab     { font: 13px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #8A96A4; }
+      .tabsel  { font: 500 13px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #DCD5C8; }
+      .badge   { font: 700 12px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #0E1319; }
+      .spin    { font: 700 13px "SF Mono", Menlo, monospace; }
+      .rule    { stroke: #202A36; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="380" height="560"/>
+
+  <!-- header -->
+  <rect x="14" y="16" width="12" height="12" rx="2.5" fill="#E4572E"/>
+  <text class="head" x="34" y="27">HQ</text>
+  <text class="dim" x="366" y="27" text-anchor="end">14:22:07</text>
+  <line class="rule" x1="0" y1="44" x2="380" y2="44"/>
+
+  <!-- row 1 — selected, agent working -->
+  <rect class="cardsel" x="10" y="56" width="360" height="66" rx="8"/>
+  <rect x="10" y="56" width="360" height="66" rx="8" fill="#FF7A45" opacity="0.14"/>
+  <rect x="10" y="56" width="360" height="66" rx="8" fill="none" stroke="#E4572E" stroke-width="2"/>
+  <rect x="21" y="67" width="9" height="44" rx="3" fill="#FF7A45"/>
+  <circle cx="46" cy="82" r="7" fill="none" stroke="#FF7A45" stroke-width="1.6"/>
+  <path d="M39 82 h14" stroke="#FF7A45" stroke-width="1.4"/>
+  <ellipse cx="46" cy="82" rx="3.4" ry="7" fill="none" stroke="#FF7A45" stroke-width="1.4"/>
+  <text class="titlesel" x="64" y="80">api-gateway</text>
+  <circle cx="332" cy="76" r="6" fill="none" stroke="#FF7A45" stroke-width="2" stroke-linecap="round" stroke-dasharray="28 10" transform="rotate(-90 332 76)"/>
+  <circle cx="66" cy="98" r="3.5" fill="#E8B04B"/>
+  <text class="meta" x="76" y="102">feat/rate-limits</text>
+  <text class="meta" x="190" y="102" fill="#5FB88E">#412</text>
+  <path d="M236 94 l-6 9 h4 l-2 7 6 -9 h-4 z" fill="#3E9BAD"/><text class="meta" x="246" y="102" fill="#3E9BAD">2</text>
+  <rect x="316" y="88" width="34" height="18" rx="9" fill="#E4572E"/>
+  <text class="badge" x="333" y="101" text-anchor="middle">3</text>
+
+  <!-- selected workspace tabs -->
+  <circle cx="40" cy="136" r="3" fill="#E4572E"/>
+  <text class="tabsel" x="52" y="140">Agent</text>
+  <circle cx="40" cy="158" r="3" fill="#2A3340"/>
+  <text class="tab" x="52" y="162">Dev Server</text>
+  <circle cx="40" cy="180" r="3" fill="#2A3340"/>
+  <text class="tab" x="52" y="184">Tests</text>
+
+  <!-- row 2 -->
+  <rect class="card" x="10" y="200" width="360" height="66" rx="8"/>
+  <rect x="10" y="200" width="360" height="66" rx="8" fill="#7FD98A" opacity="0.07"/>
+  <rect x="10" y="200" width="360" height="66" rx="8" fill="none" stroke="#7FD98A" stroke-width="1" opacity="0.8"/>
+  <rect x="21" y="211" width="9" height="44" rx="3" fill="#7FD98A"/>
+  <path d="M40 214 h9 l5 5 v13 h-14 z" fill="none" stroke="#7FD98A" stroke-width="1.6" stroke-linejoin="round"/><path d="M49 214 v5 h5" fill="none" stroke="#7FD98A" stroke-width="1.4"/>
+  <text class="title" x="64" y="224">docs-site</text>
+  <circle cx="66" cy="242" r="3.5" fill="#5A9E6F"/>
+  <text class="meta" x="76" y="246">main</text>
+  <path d="M134 238 l-6 9 h4 l-2 7 6 -9 h-4 z" fill="#3E9BAD"/><text class="meta" x="144" y="246" fill="#3E9BAD">1</text>
+
+  <!-- row 3 -->
+  <rect class="card" x="10" y="278" width="360" height="66" rx="8"/>
+  <rect x="10" y="278" width="360" height="66" rx="8" fill="#4FC3D9" opacity="0.07"/>
+  <rect x="10" y="278" width="360" height="66" rx="8" fill="none" stroke="#4FC3D9" stroke-width="1" opacity="0.8"/>
+  <rect x="21" y="289" width="9" height="44" rx="3" fill="#4FC3D9"/>
+  <rect x="40" y="296" width="14" height="11" rx="2" fill="none" stroke="#4FC3D9" stroke-width="1.6"/>
+  <path d="M40 301 h14" stroke="#4FC3D9" stroke-width="1.6"/>
+  <text class="title" x="64" y="302">worker-queue</text>
+  <circle cx="332" cy="298" r="6" fill="none" stroke="#4FC3D9" stroke-width="2" stroke-linecap="round" stroke-dasharray="28 10" transform="rotate(60 332 298)"/>
+  <circle cx="66" cy="320" r="3.5" fill="#E8B04B"/>
+  <text class="meta" x="76" y="324">fix/retry-backoff</text>
+  <text class="meta" x="196" y="324" fill="#A98BD4">#397</text>
+
+  <!-- row 4 — progress bar -->
+  <rect class="card" x="10" y="356" width="360" height="72" rx="8"/>
+  <rect x="10" y="356" width="360" height="72" rx="8" fill="#C79BF0" opacity="0.07"/>
+  <rect x="10" y="356" width="360" height="72" rx="8" fill="none" stroke="#C79BF0" stroke-width="1" opacity="0.8"/>
+  <rect x="21" y="367" width="9" height="48" rx="3" fill="#C79BF0"/>
+  <path d="M40 375 l5 5 -5 5 M48 385 h6" fill="none" stroke="#C79BF0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="title" x="64" y="380">cli-tool</text>
+  <circle cx="66" cy="398" r="3.5" fill="#5A9E6F"/>
+  <text class="meta" x="76" y="402">release/1.4</text>
+  <rect x="64" y="412" width="286" height="3" rx="1.5" fill="#2A3340"/>
+  <rect x="64" y="412" width="176" height="3" rx="1.5" fill="#E4572E"/>
+
+  <!-- row 5 -->
+  <rect class="card" x="10" y="440" width="360" height="66" rx="8"/>
+  <rect x="10" y="440" width="360" height="66" rx="8" fill="#F2C55C" opacity="0.07"/>
+  <rect x="10" y="440" width="360" height="66" rx="8" fill="none" stroke="#F2C55C" stroke-width="1" opacity="0.8"/>
+  <rect x="21" y="451" width="9" height="44" rx="3" fill="#F2C55C"/>
+  <ellipse cx="46" cy="459" rx="7" ry="2.6" fill="none" stroke="#F2C55C" stroke-width="1.5"/><path d="M39 459 v7 c0 1.4 3.1 2.6 7 2.6 s7 -1.2 7 -2.6 v-7" fill="none" stroke="#F2C55C" stroke-width="1.5"/>
+  <text class="title" x="64" y="466">infra</text>
+  <circle cx="66" cy="484" r="3.5" fill="#5A9E6F"/>
+  <text class="meta" x="76" y="488">main</text>
+
+  <!-- footer -->
+  <line class="rule" x1="0" y1="524" x2="380" y2="524"/>
+  <text class="head" x="14" y="544">5</text>
+  <text class="dim" x="30" y="544">workspaces</text>
+  <circle cx="336" cy="540" r="3.5" fill="#E4572E"/>
+  <text class="meta" x="348" y="544" fill="#E4572E">3</text>
+</svg>

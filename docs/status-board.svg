@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="470" viewBox="0 0 380 470" role="img" aria-label="Illustration of the status-board sidebar: workspaces grouped into Needs Attention, Working, Uncommitted and Quiet lanes">
+  <defs>
+    <style>
+      .bg    { fill: #0E1319; }
+      .card  { fill: #131A22; }
+      .sel   { fill: #1B2531; }
+      .lane  { font: 600 11px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #8A96A4; letter-spacing: .08em; }
+      .count { font: 11px "SF Mono", Menlo, monospace; fill: #5E6B7A; }
+      .name  { font: 13px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #C2CBD5; }
+      .namesel{ font: 600 13px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #F5F1EA; }
+      .br    { font: 11px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #7A8695; }
+      .head  { font: 600 12px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #A7B2BF; letter-spacing: .06em; }
+      .dim   { font: 12px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #7A8695; }
+      .badge { font: 700 11px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #0E1319; }
+      .rule  { stroke: #202A36; stroke-width: 1; }
+    </style>
+  </defs>
+  <rect class="bg" width="380" height="470"/>
+
+  <rect x="14" y="17" width="12" height="10" rx="2" fill="#E4572E"/>
+  <text class="head" x="34" y="27">STATUS BOARD</text>
+  <text class="dim" x="366" y="27" text-anchor="end">14:22:07</text>
+  <line class="rule" x1="0" y1="44" x2="380" y2="44"/>
+
+  <!-- Needs attention -->
+  <circle cx="22" cy="66" r="3.5" fill="#E4572E"/>
+  <text class="lane" x="34" y="70">NEEDS ATTENTION</text>
+  <text class="count" x="366" y="70" text-anchor="end">2</text>
+  <rect class="sel" x="14" y="78" width="352" height="40" rx="6"/>
+  <rect x="22" y="85" width="3" height="26" rx="1.5" fill="#E4572E"/>
+  <text class="namesel" x="36" y="96">api-gateway</text>
+  <text class="br" x="36" y="110">feat/rate-limits</text>
+  <rect x="330" y="89" width="28" height="17" rx="8.5" fill="#E4572E"/>
+  <text class="badge" x="344" y="101" text-anchor="middle">3</text>
+  <rect class="card" x="14" y="124" width="352" height="40" rx="6"/>
+  <rect x="22" y="131" width="3" height="26" rx="1.5" fill="#E4572E"/>
+  <text class="name" x="36" y="142">worker-queue</text>
+  <text class="br" x="36" y="156">fix/retry-backoff</text>
+  <rect x="334" y="135" width="24" height="17" rx="8.5" fill="#E4572E"/>
+  <text class="badge" x="346" y="147" text-anchor="middle">1</text>
+
+  <!-- Working -->
+  <circle cx="22" cy="192" r="3.5" fill="#E8B04B"/>
+  <text class="lane" x="34" y="196">WORKING</text>
+  <text class="count" x="366" y="196" text-anchor="end">1</text>
+  <rect class="card" x="14" y="204" width="352" height="40" rx="6"/>
+  <rect x="22" y="211" width="3" height="26" rx="1.5" fill="#E8B04B"/>
+  <text class="name" x="36" y="222">cli-tool</text>
+  <text class="br" x="36" y="236">release/1.4</text>
+
+  <!-- Uncommitted -->
+  <circle cx="22" cy="272" r="3.5" fill="#6BA4E4"/>
+  <text class="lane" x="34" y="276">UNCOMMITTED</text>
+  <text class="count" x="366" y="276" text-anchor="end">1</text>
+  <rect class="card" x="14" y="284" width="352" height="40" rx="6"/>
+  <rect x="22" y="291" width="3" height="26" rx="1.5" fill="#6BA4E4"/>
+  <text class="name" x="36" y="302">infra</text>
+  <text class="br" x="36" y="316">main</text>
+
+  <!-- Quiet -->
+  <circle cx="22" cy="352" r="3.5" fill="#4B9E78"/>
+  <text class="lane" x="34" y="356">QUIET</text>
+  <text class="count" x="366" y="356" text-anchor="end">1</text>
+  <rect class="card" x="14" y="364" width="352" height="40" rx="6"/>
+  <rect x="22" y="371" width="3" height="26" rx="1.5" fill="#4B9E78"/>
+  <text class="name" x="36" y="382">docs-site</text>
+  <text class="br" x="36" y="396">main</text>
+
+  <line class="rule" x1="0" y1="430" x2="380" y2="430"/>
+  <text class="head" x="14" y="450">5</text>
+  <text class="dim" x="30" y="450">workspaces</text>
+</svg>

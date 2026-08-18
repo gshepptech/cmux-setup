@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/manaflow-ai/cmux/main/web/data/cmux.schema.json",
+  "schemaVersion": 1,
+
+  // Sharpened Dark — cool ink base, single blaze accent.
+  // Every value below is optional; delete any key to fall back to cmux's own
+  // Settings UI. Reload after editing with: cmux reload-config
+
+  "paneBorderColor": "#1B222B",
+  "activePaneBorderColor": "#E4572E",
+
+  "app": {
+    "globalFontMagnification": 110,
+    "reorderOnNotification": false,
+    "iMessageMode": false,
+    "newWorkspacePlacement": "end",
+    "minimalMode": false
+  },
+
+  "sidebarAppearance": {
+    "matchTerminalBackground": false,
+    "darkModeTintColor": "#0E1319",
+    "lightModeTintColor": "#EFEBE3",
+    "tintOpacity": 0.6
+  },
+
+  "sidebar": {
+    "wrapWorkspaceTitles": true,
+    "branchLayout": "inline",
+    "showBranchDirectory": true,
+    "showWorkspaceDescription": true,
+    "showPullRequests": true,
+    "makePullRequestsClickable": true,
+    "openPullRequestLinksInCmuxBrowser": true,
+    "watchGitStatus": true,
+    "showPorts": true,
+    "openPortLinksInCmuxBrowser": true,
+    "showSSH": true,
+    "showLog": false,
+    "showProgress": true,
+    "showAgentActivity": true,
+    "showCustomMetadata": true,
+    "showNotificationMessage": true,
+    "notificationMessageLineLimit": 2,
+    "notificationBadgePosition": "leading",
+    "loadingSpinnerPosition": "trailing"
+  },
+
+  "workspaceColors": {
+    "indicatorStyle": "washRail",
+    "selectionColor": "#1A2430",
+    "notificationBadgeColor": "#E4572E",
+    "colors": {
+      "Blaze": "#FF7A45",
+      "Ember": "#FF8A8A",
+      "Gold": "#F2C55C",
+      "Sand": "#D4A574",
+      "Moss": "#7FD98A",
+      "Mint": "#6FDCB4",
+      "Tide": "#4FC3D9",
+      "Sky": "#7FB4FF",
+      "Violet": "#C79BF0",
+      "Rose": "#E88FC0"
+    }
+  },
+
+  "shortcuts": {
+    "bindings": {
+      "focusNextPane": "cmd+opt+.",
+      "focusPreviousPane": "cmd+opt+,",
+      "reopenClosedWorkspace": "cmd+shift+ctrl+t"
+    }
+  },
+
+  // Plain Cmd-N opens a workspace with your agent already running.
+  // Set CMUX_AGENT in your shell profile to the CLI you use.
+  // Unset, the pane opens a normal login shell.
+  "newWorkspaceCommand": "New Agent",
+
+  "commands": [
+    {
+      "name": "New Agent",
+      "description": "Single agent pane in the inherited working directory",
+      "keywords": ["agent", "new"],
+      "workspace": {
+        "name": "Agent",
+        "cwd": ".",
+        "layout": {
+          "pane": { "surfaces": [ { "type": "terminal", "name": "Agent", "command": "[ -n \"$CMUX_AGENT\" ] && command -v \"$CMUX_AGENT\" >/dev/null 2>&1 && exec \"$CMUX_AGENT\" || exec ${SHELL:-/bin/zsh} -l", "focus": true } ] }
+        }
+      }
+    },
+    {
+      "name": "Agent + Shell",
+      "description": "Agent left, plain shell right, in the current directory",
+      "keywords": ["agent", "split", "shell"],
+      "workspace": {
+        "name": "Agent",
+        "cwd": ".",
+        "layout": {
+          "direction": "horizontal",
+          "split": 0.6,
+          "children": [
+            { "pane": { "surfaces": [ { "type": "terminal", "name": "Agent", "command": "[ -n \"$CMUX_AGENT\" ] && command -v \"$CMUX_AGENT\" >/dev/null 2>&1 && exec \"$CMUX_AGENT\" || exec ${SHELL:-/bin/zsh} -l", "focus": true } ] } },
+            { "pane": { "surfaces": [ { "type": "terminal", "name": "Shell" } ] } }
+          ]
+        }
+      }
+    }
+
+    // Project layouts go here. Generate one for any repo with:
+    //   bin/add-layout.sh ~/path/to/repo
+  ]
+}

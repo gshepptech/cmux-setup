@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="300" viewBox="0 0 620 300" role="img" aria-label="Illustration of a generated workspace layout: an agent pane on the left at 55 percent width, with a dev server pane above a test watcher pane on the right">
+  <defs>
+    <style>
+      .bg    { fill: #0E1319; }
+      .pane  { fill: #131A22; }
+      .label { font: 600 13px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #C2CBD5; }
+      .cmd   { font: 12px "SF Mono", Menlo, monospace; fill: #7A8695; }
+      .out   { font: 11px "SF Mono", Menlo, monospace; fill: #5E6B7A; }
+      .cap   { font: 11px -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; fill: #5E6B7A; }
+    </style>
+  </defs>
+  <rect class="bg" width="620" height="300"/>
+
+  <!-- agent pane, focused -->
+  <rect class="pane" x="14" y="14" width="322" height="272" rx="8"/>
+  <rect x="14" y="14" width="322" height="272" rx="8" fill="none" stroke="#E4572E" stroke-width="2"/>
+  <text class="label" x="32" y="42">Agent</text>
+  <text class="cmd" x="32" y="70">❯ $CMUX_AGENT</text>
+  <text class="out" x="32" y="94">▌ reading src/router.ts</text>
+  <text class="out" x="32" y="114">▌ 3 files changed</text>
+  <text class="out" x="32" y="138">▌ running the project checks</text>
+  <text class="out" x="32" y="162">▌ 48 passed, 0 failed</text>
+  <text class="out" x="32" y="192" fill="#5A9E6F">▌ ready for review</text>
+  <text class="cap" x="32" y="272">55% · focused pane carries the blaze border</text>
+
+  <!-- dev server -->
+  <rect class="pane" x="348" y="14" width="258" height="130" rx="8"/>
+  <rect x="348" y="14" width="258" height="130" rx="8" fill="none" stroke="#1B222B" stroke-width="1"/>
+  <text class="label" x="366" y="42">Dev Server</text>
+  <text class="cmd" x="366" y="68">❯ npm run dev</text>
+  <text class="out" x="366" y="90">ready on :3000</text>
+
+  <!-- tests -->
+  <rect class="pane" x="348" y="156" width="258" height="130" rx="8"/>
+  <rect x="348" y="156" width="258" height="130" rx="8" fill="none" stroke="#1B222B" stroke-width="1"/>
+  <text class="label" x="366" y="184">Tests</text>
+  <text class="cmd" x="366" y="210">❯ npm run test:watch</text>
+  <text class="out" x="366" y="232" fill="#5A9E6F">48 passed</text>
+</svg>
